@@ -8,15 +8,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import qrcode from 'qrcode';
 import NodeCache from 'node-cache';
-import makeWASocket, {
-  DisconnectReason,
-  useMultiFileAuthState,
-  fetchLatestBaileysVersion,
-  makeCacheableSignalKeyStore,
-  isJidUser,
-  WAMessageKey,
-  makeInMemoryStore,
-} from '@whiskeysockets/baileys';
+import { default as makeWASocket, DisconnectReason, useMultiFileAuthState, fetchLatestBaileysVersion, makeCacheableSignalKeyStore, isJidUser, WAMessageKey, makeInMemoryStore } from '@whiskeysockets/baileys';
 // For terminal debugging
 import qrcodeTerminal from 'qrcode-terminal';
 
